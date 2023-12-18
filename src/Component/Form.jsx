@@ -1,4 +1,8 @@
 import React ,{ useState } from 'react';
+import PersonalInfoForm from './Form_Component/PersonalInfo';
+import EducationInfo from './Form_Component/EducationInfo';
+import ExperienceInfoForm from './Form_Component/ExperienceInfo';
+import SkillInfoForm from './Form_Component/SkillsInfo';
 
 const Form = () => {
   const [step, setStep] = useState(1);
@@ -24,13 +28,13 @@ const Form = () => {
   switch (step) 
   {
     case 1:
-      return <PersonalInfo nextStep={nextStep} handleChange={handleChange} />;
+      return <PersonalInfoForm nextStep={nextStep} handleChange={handleChange} />;
     case 2:
       return <EducationInfo nextStep={nextStep} prevStep={prevStep} handleChange={handleChange} />;
     case 3:
-      return <ExperienceInfo nextStep={nextStep} prevStep={prevStep} handleChange={handleChange} />;
+      return <ExperienceInfoForm nextStep={nextStep} prevStep={prevStep} handleChange={handleChange} />;
     case 4:
-      return <SkillsInfo nextStep={nextStep} prevStep={prevStep} handleChange={handleChange} />;
+      return <SkillInfoForm nextStep={nextStep} prevStep={prevStep} handleChange={handleChange} />;
     case 5:
       return <Review formData={formData} prevStep={prevStep} nextStep={nextStep} />;
     case 6:

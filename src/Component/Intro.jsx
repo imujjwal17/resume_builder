@@ -5,9 +5,9 @@ import Hiring from "../assets/hiring.png";
 const Intro = () => {
   return (
     <>
-    <div className="flex flex-row bg-gradient-to-r from-white to-blue-400 min-h-screen w-full item-center">
-    <div className="flex flex-col w-4/5 ">
-      <div className="flex text-black h-40 border shadow-sm rounded-md border-r-slate-700 mt-20 bg-white ml-40 p-4 items-center w-fit">
+    <div className="flex flex-col items-center md:flex-row bg-gradient-to-r from-white to-blue-400 min-h-screen w-[100vw] item-center">
+    <div className="flex flex-col gap-4 max-md:mt-4 items-center max-md:px-4 w-full md:w-1/2 ">
+      <div className="flex text-black border shadow-sm rounded-md border-r-slate-700 bg-white p-4 items-center w-fit">
         <img src={ThumbsUp} alt="" className="w-[60px] h-[60px] p-2"/>
         <div className="flex flex-col ml-3">
           <span className="font-bold text-xl">Easy Online Resume Builder</span>
@@ -17,7 +17,7 @@ const Intro = () => {
           </span>
         </div>
       </div>
-      <div className="flex text-black h-40 border shadow-sm rounded-md border-r-slate-700 mt-20 bg-white ml-40 p-4 items-center w-fit">
+      <div className="flex text-black border shadow-sm rounded-md border-r-slate-700 bg-white p-4 items-center w-fit">
         <img src={Guide} alt="" className="w-[60px] h-[60px] p-2"/>
         <div className="flex flex-col ml-3">
           <span className="font-bold text-xl">Step By Step Expert Tips</span>
@@ -27,7 +27,7 @@ const Intro = () => {
           </span>
         </div>
       </div>
-      <div className="flex text-black h-40 border shadow-sm rounded-md border-r-slate-700 mt-20 bg-white ml-40 p-4 items-center w-fit">
+      <div className="flex text-black max-md:mb-[100px] border shadow-sm rounded-md border-r-slate-700 bg-white p-4 items-center w-fit">
         <img src={Hiring} alt="" className="w-[60px] h-[60px] p-2"/>
         <div className="flex flex-col ml-3">
           <span className="font-bold text-xl">Recruiter Approved Phrases</span>
@@ -38,7 +38,7 @@ const Intro = () => {
         </div>
       </div>
     </div>
-    <div className="flex flex-col w-fit ml-48 mt-48 mr-20">
+    <div className="flex flex-col w-full max-md:px-4 md:w-1/2 ">
         <div className="flex space-x-3">
             <span className="bg-blue-500 rounded-full w-4 h-4"></span>
             <span className="bg-violet-500 rounded-full w-4 h-4"></span>
